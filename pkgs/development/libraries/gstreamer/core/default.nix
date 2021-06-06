@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     # - https://github.com/NixOS/nixpkgs/pull/98767
     # - https://github.com/NixOS/nixpkgs/issues/98769#issuecomment-702296551
   ];
-  outputBin = "dev";
+  outputBin = "out";
 
   src = fetchurl {
     url = "https://gstreamer.freedesktop.org/src/${pname}/${pname}-${version}.tar.xz";
